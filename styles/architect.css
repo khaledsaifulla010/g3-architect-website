@@ -1,23 +1,36 @@
-/* Common Styles Shared */
-body {
+/* work sans font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared styles */
+* {
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
-
-.primary-button {
-    color: #FFF;
+/* .text-light-gray {
+    color: #727272;
+} */
+.btn-primary {
     border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
     background: #FF900E;
-    padding: 15px;
-    margin: 30px;
-    border: none;
+    padding: 20px 25px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
 }
 
-/* Header styles */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+/* header styles */
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 175px;
+    padding: 50px 240px;
 }
 
 nav {
@@ -26,6 +39,8 @@ nav {
     align-items: center;
 }
 
+
+
 nav>ul {
     display: flex;
 }
@@ -33,8 +48,8 @@ nav>ul {
 nav li {
     list-style: none;
     margin-right: 30px;
-    font-size: 1rem;
     font-weight: 500;
+    font-size: 1rem;
 }
 
 nav li a {
@@ -42,37 +57,38 @@ nav li a {
     color: #424242;
 }
 
-.nav-tittle {
-    color: #131313;
-    font-size: 2rem;
-    font-weight: 700;
-
-}
-
-/* Banner styles */
+/* banner styles */
 .banner-content {
-    width: 800px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 
-.banner-tittle {
-    color: #131313;
-    text-align: center;
-    font-size: 3.0rem;
+.banner-title {
+    font-size: 4rem;
     font-weight: 700;
+    color: #131313;
 }
 
-.banner-description {
-    color: #727272;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
 
-.banner-pic {
-    width: 1000px;
-    height: 800px;
-
-
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
