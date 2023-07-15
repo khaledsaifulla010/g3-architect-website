@@ -4,3 +4,75 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
+.primary-button {
+    color: #FFF;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 15px;
+    margin: 30px;
+    border: none;
+}
+
+/* Header styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 175px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.nav-tittle {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+/* Banner styles */
+.banner-content {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-tittle {
+    color: #131313;
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner-pic {
+    width: 1000px;
+    height: 800px;
+
+
+}
